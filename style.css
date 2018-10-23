@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 100px 100px 1fr;
+}
+
+.tasksCounter {
+    text-align: center;
+    font-size: 2rem;
+    color: gold;
+}
+
+h1 {
+    font-size: 3rem;
+    color: yellowgreen;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+h1 span {
+    font-size: 4.2rem;
+    color: gold;
+}
+
+form input {
+    margin: 1% auto;
+    padding: 20px 35px;
+    display: block;
+    background-color: gold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #000;
+}
+
+#tasks {
+    list-style-type: none;
+    width: 100%;
+    margin: 5% auto;
+    line-height: 2;
+    font-size: 2rem;
+    color: yellowgreen;
+}
+
+
+.task {
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.task div {
+    display: inline-block;
+    width: 40%;
+}
+
+.task div::first-letter {
+    margin-left: 25%;
+    font-size: 2.2rem;
+    color: gold;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.task button {
+    display: inline-block;
+    width: 40%;
+    border: none;
+    padding: 20px 45px;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: red;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.task button:hover {
+    color: gold;
+}
